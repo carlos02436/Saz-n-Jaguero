@@ -1,0 +1,17 @@
+.logo {
+    border-radius: 100px;
+    align-items: start;
+    width: 70px;
+    margin-right: 12px;
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.carrusel {
+    height: 400px;
+    width: 50px;
+    margin: auto;
+}
