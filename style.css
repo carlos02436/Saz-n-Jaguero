@@ -1,17 +1,26 @@
-.logo {
-    border-radius: 100px;
-    align-items: start;
+  .logo {
     width: 70px;
     margin-right: 12px;
-    transition: all 0.3s;
-}
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
 
-.logo:hover {
+  .logo:hover {
     transform: scale(1.1);
-}
+  }
 
 .carrusel {
     height: 400px;
     width: 50px;
     margin: auto;
+}
+
+.carousel-item {
+  height: 70vh; /* Altura proporcional a la pantalla */
+  min-height: 300px; /* Altura mínima para pantallas pequeñas */
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
 }
