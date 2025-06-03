@@ -1,26 +1,181 @@
-  .logo {
-    width: 70px;
-    margin-right: 12px;
-    transition: transform 0.3s ease;
-    display: inline-block;
-  }
+.logo {
+  width: 70px;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
 
-  .logo:hover {
-    transform: scale(1.1);
-  }
-
-.carrusel {
-    height: 400px;
-    width: 50px;
-    margin: auto;
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .carousel-item {
-  height: 70vh; /* Altura proporcional a la pantalla */
+  height: 70vh;    /* Altura proporcional a la pantalla */
   min-height: 300px; /* Altura mínima para pantallas pequeñas */
 }
 
 .carousel-item img {
   height: 100%;
   object-fit: cover;
+}
+
+.btn-warning {
+  background-color: rgb(255, 183, 0);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+  color: black;
+  background-color: rgb(255, 183, 0);
+  transform: scale(1.02);
+}
+
+.p {
+  background-color: green;
+  color: white;
+  border-radius: 9px;
+  width: 160px;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.p:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  transition: all 0.3s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(1.01);
+}
+
+span {
+  cursor: pointer;
+}
+
+/* ==== Cards en fila horizontal con diseño responsivo ==== */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* Espacio horizontal y vertical entre cards */
+  padding: 1rem;
+}
+
+/* Estilo base para cada card */
+.cards-container .card {
+  width: 100%;
+  max-width: 18rem;
+  flex: 1 1 calc(100% - 3rem); /* 1 por fila en móviles */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  padding: 1rem;
+}
+
+/* 2 cards por fila en tablets */
+@media (min-width: 576px) {
+  .cards-container .card {
+    flex: 1 1 calc(50% - 3rem);
+  }
+}
+
+/* 3 cards por fila en pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .cards-container .card {
+    flex: 1 1 calc(33.333% - 3rem);
+  }
+}
+
+/* Formulario */
+/* Contenedor principal del formulario */
+section > div {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px; /* 👈 Esto añade espacio debajo del formulario */
+}
+
+/* Título del formulario */
+section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Etiquetas de los campos */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444444;
+}
+
+/* Campos de entrada y área de texto */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto al enfocar los campos */
+.form-control:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+/* Margen inferior entre los campos */
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+/* Responsive: Ajuste en pantallas pequeñas */
+@media (max-width: 600px) {
+    section > div {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
+
+.btn-submit {
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.01);
+}
+
+.h2 {
+  color: #007BFF;
+  font-weight: bold;
+  padding: 15px;
 }
