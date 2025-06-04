@@ -10,8 +10,10 @@
 }
 
 .carousel-item {
-  height: 70vh;    /* Altura proporcional a la pantalla */
-  min-height: 300px; /* Altura mínima para pantallas pequeñas */
+  height: 70vh;
+  /* Altura proporcional a la pantalla */
+  min-height: 300px;
+  /* Altura mínima para pantallas pequeñas */
 }
 
 .carousel-item img {
@@ -58,13 +60,14 @@ span {
   cursor: pointer;
 }
 
-/* ==== Cards en fila horizontal con diseño responsivo ==== */
+/* Cards en fila horizontal con diseño responsivo */
 
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem; /* Espacio horizontal y vertical entre cards */
+  gap: 1.5rem;
+  /* Espacio horizontal y vertical entre cards */
   padding: 1rem;
 }
 
@@ -72,7 +75,8 @@ span {
 .cards-container .card {
   width: 100%;
   max-width: 18rem;
-  flex: 1 1 calc(100% - 3rem); /* 1 por fila en móviles */
+  flex: 1 1 calc(100% - 3rem);
+  /* 1 por fila en móviles */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: white;
@@ -94,88 +98,77 @@ span {
 }
 
 /* Formulario */
-/* Contenedor principal del formulario */
-section > div {
-    background-color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 40px; /* 👈 Esto añade espacio debajo del formulario */
+.contact-form-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
 }
 
-/* Título del formulario */
-section h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333333;
-    text-align: center;
+.contact-form-section .h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #001aff;
 }
 
-/* Etiquetas de los campos */
-.form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #444444;
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Campos de entrada y área de texto */
-.form-control {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #cccccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+.contact-form .mb-3 {
+  margin-bottom: 20px;
 }
 
-/* Efecto al enfocar los campos */
-.form-control:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
-}
-
-/* Margen inferior entre los campos */
-.mb-3 {
-    margin-bottom: 20px;
-}
-
-/* Responsive: Ajuste en pantallas pequeñas */
-@media (max-width: 600px) {
-    section > div {
-        padding: 20px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-}
-
-.btn-submit {
-    width: 100%; /* Ocupa todo el ancho del formulario */
-    background-color: #007BFF;
-    color: #ffffff;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    display: block;
-    margin-top: 10px;
-}
-
-.btn-submit:hover {
-    background-color: #0056b3;
-    transform: scale(1.01);
-}
-
-.h2 {
-  color: #007BFF;
+.contact-form .form-label {
+  display: block;
+  margin-bottom: 8px;
   font-weight: bold;
-  padding: 15px;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.contact-form textarea.form-control {
+  resize: vertical;
+}
+
+.contact-form .btn-submit {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;/* Puedes cambiar esto a 200px o auto si deseas */
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form .btn-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  .contact-form {
+    padding: 40px;
+  }
+
+  .contact-form .btn-submit {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
 }
