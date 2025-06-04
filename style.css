@@ -10,10 +10,8 @@
 }
 
 .carousel-item {
-  height: 70vh;
-  /* Altura proporcional a la pantalla */
-  min-height: 300px;
-  /* Altura mínima para pantallas pequeñas */
+  height: 70vh;/* Altura proporcional a la pantalla */
+  min-height: 300px;/* Altura mínima para pantallas pequeñas */
 }
 
 .carousel-item img {
@@ -75,8 +73,7 @@ span {
 .cards-container .card {
   width: 100%;
   max-width: 18rem;
-  flex: 1 1 calc(100% - 3rem);
-  /* 1 por fila en móviles */
+  flex: 1 1 calc(100% - 3rem);/* 1 por fila en móviles */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: white;
